@@ -1,0 +1,105 @@
+<!--05-2 실습 : 회원 가입 신청서 만들기-->
+
+<!--1단계-->
+<div id="container">
+    <h1>회원 가입을 환영합니다</h1>
+    <form>
+        <fieldset>
+            <legend>사용자 정보</legend>
+        </fieldset>
+        <fieldset>
+            <legend>이벤트와 새로운 소식</legend>
+        </fieldset>
+    </form>
+</div>
+
+<!--2단계-->
+<fieldset>
+    <legend>사용자 정보</legend>
+    <ul>
+        <li>
+            <label for="uid">아이디</label>
+            <input type="text" id="uid">
+        </li>
+        <li>
+            <label for="umail">이메일</label>
+            <input type="email" id="email">
+        </li>
+        <li>
+        <label for ="pwd1">비밀번호</label>
+        <input type="password" id="pwd1">
+        </li>
+        <li>
+            <label for ="pwd2">비밀번호 확인</label>
+            <input type="password" id="pwd2">
+        </li>
+    </ul>
+</fieldset>
+
+<!--3단계-->
+<filedset>
+    <legend>이벤트와 새로운 소식</legend>
+    <input type="radio" name="mailing" id="mailing_y">
+    <label for="mailing_y">메일 수신</label>
+    <input type="radio" name="mailing" id="mailing_n" checked>
+    <label for="mailing_n">메일 수신 안 함</label>
+</filedset>
+
+<!--4단계-->
+<div id="button">
+    <input type = "submit" value="가입하기">
+    <input type = "reset" value="취소">
+</div>
+
+<!--05-3 실습 : 회원 가입 신청서에 속성 지정하기-->
+
+<!--1단계-->
+<fieldset>
+    <legend>사용자 정보</legend>
+    <ul>
+        <li>
+            <label for="uid">아이디</label>
+            <input type="text" id="uid" autofocus placeholder="4자~10자 사이, 공백없이" required>
+        </li>
+        <li>
+            <label for="umail">이메일</label>
+            <input type="email" id="umail" required>
+        </li>
+        <li>
+        <label for ="pwd1">비밀번호</label>
+        <input type="password" id="pwd1" placeholder="문자와 숫자, 특수 기호 포함" required>
+        </li>
+        <li>
+            <label for ="pwd2">비밀번호 확인</label>
+            <input type="password" id="pwd2" required>
+        </li>
+    </ul>
+</fieldset>
+
+<!--2단계-->
+<filedset>
+    <legend>이벤트와 새로운 소식</legend>
+    <input type="radio" name="mailing" id="mailing_y" value="mailing_yes">
+    <label for="mailing_y">메일 수신</label>
+    <input type="radio" name="mailing" id="mailing_n" value="mailing_no"checked>
+    <label for="mailing_n">메일 수신 안 함</label>
+</filedset>
+
+<!--05-4 실습 : 드롭다운 목록과 텍스트 영역 추가하기-->
+
+<!--1단계-->
+<li>
+    <label for="path">가입 경로</label>
+    <select id = "path">
+        <option value="blog">블로그</option>
+        <option value="search">검색</option>
+        <option value="sns">SNS</option>
+        <option value="etc">기타</option>
+    </select>
+</li>
+
+<!--2단계-->
+<li>
+    <label for="memo">메모</label>
+    <textarea cols="40" rows="4" placeholder="남길 메모 있으면 여기에 적어주세요."></textarea>
+</li>
